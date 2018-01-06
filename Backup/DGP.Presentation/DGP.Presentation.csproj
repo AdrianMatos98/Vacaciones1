@@ -1,0 +1,291 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{490582BA-C51D-4244-801B-21F8F0A253F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DGP.Presentation</RootNamespace>
+    <AssemblyName>DGP.Presentation</AssemblyName>
+    <StartupObject>DGP.Presentation.Program</StartupObject>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.2.3600.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Shared\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\CalendarColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\DGP_Util.cs" />
+    <Compile Include="Clases\VariablesSession.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDIPrincipal.Designer.cs">
+      <DependentUpon>frmMDIPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIPrincipal.resx">
+      <DependentUpon>frmMDIPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteFiltrosHojaPrecios.resx">
+      <DependentUpon>frmReporteFiltrosHojaPrecios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteFiltrosHojaTablero.resx">
+      <DependentUpon>frmReporteFiltrosHojaTablero.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteFiltroPersonal.resx">
+      <DependentUpon>frmReporteFiltroPersonal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteCobranza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReporteCobranza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteFiltrosTablero.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReporteFiltrosTablero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReporteViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmActMasivaClientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActMasivaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmAmortizacion.resx">
+      <DependentUpon>frmAmortizacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmDetalleVenta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmDevoluciones.resx">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmMantenimientoCliente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmMantenimientoVentas.resx">
+      <DependentUpon>frmMantenimientoVentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmPagoAdelanto.resx">
+      <DependentUpon>frmPagoAdelanto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmProductoCliente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProductoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\frmTableroElectronico.resx">
+      <DependentUpon>frmTableroElectronico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\DGP.Entities.BEProducto.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.BEZona.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesCliente+Tb_Cliente_ProveedorDataTable.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesCliente+Tb_Prod_x_ClienteDataTable.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesCliente+Tb_Prod_x_ClienteDataTable1.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesCliente+Tb_ZonaDataTable.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesClienteTableAdapters.Tb_Cliente_ProveedorTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesTablero+tb_gastoDataTable.datasource" />
+    <None Include="Properties\DataSources\DGP.Entities.DataSet.DSEntitiesTablero+Tb_Tipo_GastoDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltrosHojaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltrosHojaPrecios.Designer.cs">
+      <DependentUpon>frmReporteFiltrosHojaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltrosHojaTablero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltrosHojaTablero.Designer.cs">
+      <DependentUpon>frmReporteFiltrosHojaTablero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltroPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltroPersonal.Designer.cs">
+      <DependentUpon>frmReporteFiltroPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteCobranza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteCobranza.Designer.cs">
+      <DependentUpon>frmReporteCobranza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltrosTablero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFiltrosTablero.Designer.cs">
+      <DependentUpon>frmReporteFiltrosTablero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteViewer.Designer.cs">
+      <DependentUpon>frmReporteViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmActMasivaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmActMasivaClientes.Designer.cs">
+      <DependentUpon>frmActMasivaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmAmortizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmAmortizacion.Designer.cs">
+      <DependentUpon>frmAmortizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmDetalleVenta.Designer.cs">
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmDevoluciones.Designer.cs">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmMantenimientoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmMantenimientoCliente.Designer.cs">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmMantenimientoVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmMantenimientoVentas.Designer.cs">
+      <DependentUpon>frmMantenimientoVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmPagoAdelanto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmPagoAdelanto.Designer.cs">
+      <DependentUpon>frmPagoAdelanto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmProductoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmProductoCliente.Designer.cs">
+      <DependentUpon>frmProductoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmTableroElectronico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\frmTableroElectronico.Designer.cs">
+      <DependentUpon>frmTableroElectronico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\frmTableroElectronico_gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DGP.BusinessLogic\DGP.BusinessLogic.csproj">
+      <Project>{633259E9-B16D-443D-9877-8AB726DB5136}</Project>
+      <Name>DGP.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DGP.Entities\DGP.Entities.csproj">
+      <Project>{49133B8B-721D-40BE-982C-0BF2AFF11CDA}</Project>
+      <Name>DGP.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DGP.Util\DGP.Util.csproj">
+      <Project>{CF024771-7788-4488-8964-8E4452DB4007}</Project>
+      <Name>DGP.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

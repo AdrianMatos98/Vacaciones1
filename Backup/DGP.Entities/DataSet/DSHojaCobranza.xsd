@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSHojaCobranza" targetNamespace="http://tempuri.org/DSHojaCobranza.xsd" xmlns:mstns="http://tempuri.org/DSHojaCobranza.xsd" xmlns="http://tempuri.org/DSHojaCobranza.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSHojaCobranza" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSHojaCobranza" msprop:Generator_DataSetName="DSHojaCobranza">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="COBRANZA" msprop:Generator_UserTableName="COBRANZA" msprop:Generator_RowDeletedName="COBRANZARowDeleted" msprop:Generator_RowChangedName="COBRANZARowChanged" msprop:Generator_RowClassName="COBRANZARow" msprop:Generator_RowChangingName="COBRANZARowChanging" msprop:Generator_RowEvArgName="COBRANZARowChangeEvent" msprop:Generator_RowEvHandlerName="COBRANZARowChangeEventHandler" msprop:Generator_TableClassName="COBRANZADataTable" msprop:Generator_TableVarName="tableCOBRANZA" msprop:Generator_RowDeletingName="COBRANZARowDeleting" msprop:Generator_TablePropName="COBRANZA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_VENTA" msprop:Generator_UserColumnName="ID_VENTA" msprop:Generator_ColumnVarNameInTable="columnID_VENTA" msprop:Generator_ColumnPropNameInRow="ID_VENTA" msprop:Generator_ColumnPropNameInTable="ID_VENTAColumn" type="xs:string" />
+              <xs:element name="TOTAL_SALDO" msprop:Generator_UserColumnName="TOTAL_SALDO" msprop:Generator_ColumnVarNameInTable="columnTOTAL_SALDO" msprop:Generator_ColumnPropNameInRow="TOTAL_SALDO" msprop:Generator_ColumnPropNameInTable="TOTAL_SALDOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TIPO_COBRANZA" msprop:Generator_UserColumnName="TIPO_COBRANZA" msprop:Generator_ColumnVarNameInTable="columnTIPO_COBRANZA" msprop:Generator_ColumnPropNameInRow="TIPO_COBRANZA" msprop:Generator_ColumnPropNameInTable="TIPO_COBRANZAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA" msprop:Generator_UserColumnName="FECHA" msprop:Generator_ColumnVarNameInTable="columnFECHA" msprop:Generator_ColumnPropNameInRow="FECHA" msprop:Generator_ColumnPropNameInTable="FECHAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ZONA" msprop:Generator_UserColumnName="ZONA" msprop:Generator_ColumnVarNameInTable="columnZONA" msprop:Generator_ColumnPropNameInRow="ZONA" msprop:Generator_ColumnPropNameInTable="ZONAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENTE" msprop:Generator_UserColumnName="CLIENTE" msprop:Generator_ColumnVarNameInTable="columnCLIENTE" msprop:Generator_ColumnPropNameInRow="CLIENTE" msprop:Generator_ColumnPropNameInTable="CLIENTEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_CLIENTE" msprop:Generator_UserColumnName="TIPO_CLIENTE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TIPO_CLIENTE" msprop:Generator_ColumnPropNameInTable="TIPO_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnTIPO_CLIENTE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCTO" msprop:Generator_UserColumnName="PRODUCTO" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnPRODUCTO" msprop:Generator_ColumnPropNameInTable="PRODUCTOColumn" msprop:Generator_ColumnPropNameInRow="PRODUCTO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:COBRANZA" />
+      <xs:field xpath="mstns:ID_VENTA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

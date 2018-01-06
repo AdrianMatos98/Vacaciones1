@@ -1,0 +1,6 @@
+E:\GitHub\Projecto\DGP\DGP.Entities\bin\Debug\DGP.Entities.dll.config
+E:\GitHub\Projecto\DGP\DGP.Entities\bin\Debug\DGP.Entities.dll
+E:\GitHub\Projecto\DGP\DGP.Entities\bin\Debug\DGP.Entities.pdb
+E:\GitHub\Projecto\DGP\DGP.Entities\obj\Debug\ResolveAssemblyReference.cache
+E:\GitHub\Projecto\DGP\DGP.Entities\obj\Debug\DGP.Entities.dll
+E:\GitHub\Projecto\DGP\DGP.Entities\obj\Debug\DGP.Entities.pdb

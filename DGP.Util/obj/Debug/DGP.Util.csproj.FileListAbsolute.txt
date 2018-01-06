@@ -1,0 +1,5 @@
+E:\GitHub\Projecto\DGP\DGP.Util\bin\Debug\DGP.Util.dll
+E:\GitHub\Projecto\DGP\DGP.Util\bin\Debug\DGP.Util.pdb
+E:\GitHub\Projecto\DGP\DGP.Util\obj\Debug\ResolveAssemblyReference.cache
+E:\GitHub\Projecto\DGP\DGP.Util\obj\Debug\DGP.Util.dll
+E:\GitHub\Projecto\DGP\DGP.Util\obj\Debug\DGP.Util.pdb

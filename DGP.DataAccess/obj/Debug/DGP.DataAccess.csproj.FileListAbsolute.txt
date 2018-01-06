@@ -1,0 +1,7 @@
+E:\GitHub\Projecto\DGP\DGP.DataAccess\bin\Debug\DGP.DataAccess.dll
+E:\GitHub\Projecto\DGP\DGP.DataAccess\bin\Debug\DGP.DataAccess.pdb
+E:\GitHub\Projecto\DGP\DGP.DataAccess\bin\Debug\DGP.Entities.dll
+E:\GitHub\Projecto\DGP\DGP.DataAccess\bin\Debug\DGP.Entities.pdb
+E:\GitHub\Projecto\DGP\DGP.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\GitHub\Projecto\DGP\DGP.DataAccess\obj\Debug\DGP.DataAccess.dll
+E:\GitHub\Projecto\DGP\DGP.DataAccess\obj\Debug\DGP.DataAccess.pdb

@@ -1,0 +1,273 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49133B8B-721D-40BE-982C-0BF2AFF11CDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DGP.Entities</RootNamespace>
+    <AssemblyName>DGP.Entities</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DGP.Entities.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BECaja.cs" />
+    <Compile Include="BEClienteProveedor.cs" />
+    <Compile Include="BEEmpresa.cs" />
+    <Compile Include="BEParametroDetalle.cs" />
+    <Compile Include="DataSet\DSEntitiesCliente.cs">
+      <DependentUpon>DSEntitiesCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DSEntitiesCliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEntitiesCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DSEntitiesTablero.cs">
+      <DependentUpon>DSEntitiesTablero.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\DSEntitiesTablero.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEntitiesTablero.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DSHojaCobranza.cs">
+      <DependentUpon>DSHojaCobranza.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\DSHojaCobranza.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSHojaCobranza.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DSRptClientes.cs">
+      <DependentUpon>DSRptClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DSRptClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DSRptTablero.cs">
+      <DependentUpon>DSRptTablero.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\DSRptTablero.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptTablero.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dgpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dgpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eAccion.cs" />
+    <Compile Include="eParametro.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\BEFiltroTablero.cs" />
+    <Compile Include="Reportes\CRptHojaPrecios.cs">
+      <DependentUpon>CRptHojaPrecios.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CRptHojaTablero.cs">
+      <DependentUpon>CRptHojaTablero.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CRHojaCobranza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRHojaCobranza.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CRptReporteTablero.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRptReporteTablero.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CRRendicion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRRendicion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seguridad\BEPersonal.cs" />
+    <Compile Include="BEProducto.cs" />
+    <Compile Include="BEProductoCliente.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ventas\BEAmortizacionVenta.cs" />
+    <Compile Include="Ventas\BELineaVenta.cs" />
+    <Compile Include="Ventas\BEVenta.cs" />
+    <Compile Include="BEZona.cs" />
+    <Compile Include="Ventas\dsLineaVenta.cs">
+      <DependentUpon>dsLineaVenta.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ventas\dsLineaVenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLineaVenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\eVentaEsSobrante.cs" />
+    <Compile Include="Ventas\VistaAmortizacion.cs" />
+    <Compile Include="Ventas\VistaVenta.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet\DSEntitiesCliente.xsc">
+      <DependentUpon>DSEntitiesCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSEntitiesCliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEntitiesCliente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\DSEntitiesCliente.xss">
+      <DependentUpon>DSEntitiesCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSEntitiesTablero.xsc">
+      <DependentUpon>DSEntitiesTablero.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSEntitiesTablero.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEntitiesTablero.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\DSEntitiesTablero.xss">
+      <DependentUpon>DSEntitiesTablero.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSHojaCobranza.xsc">
+      <DependentUpon>DSHojaCobranza.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSHojaCobranza.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHojaCobranza.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DSHojaCobranza.xss">
+      <DependentUpon>DSHojaCobranza.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSRptClientes.xsc">
+      <DependentUpon>DSRptClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSRptClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\DSRptClientes.xss">
+      <DependentUpon>DSRptClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSRptTablero.xsc">
+      <DependentUpon>DSRptTablero.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DSRptTablero.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptTablero.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\DSRptTablero.xss">
+      <DependentUpon>DSRptTablero.xsd</DependentUpon>
+    </None>
+    <None Include="DGP.Entities.snk" />
+    <None Include="dgpDataSet.xsc">
+      <DependentUpon>dgpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dgpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dgpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dgpDataSet.xss">
+      <DependentUpon>dgpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ventas\dsLineaVenta.xsc">
+      <DependentUpon>dsLineaVenta.xsd</DependentUpon>
+    </None>
+    <None Include="Ventas\dsLineaVenta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLineaVenta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ventas\dsLineaVenta.xss">
+      <DependentUpon>dsLineaVenta.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\CRptHojaPrecios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRptHojaPrecios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CRptHojaTablero.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRptHojaTablero.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CRHojaCobranza.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRHojaCobranza.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CRptReporteTablero.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRptReporteTablero.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CRRendicion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRRendicion.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

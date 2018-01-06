@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSVueltos" targetNamespace="http://tempuri.org/DSVueltos.xsd" xmlns:mstns="http://tempuri.org/DSVueltos.xsd" xmlns="http://tempuri.org/DSVueltos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSVueltos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSVueltos" msprop:Generator_DataSetName="DSVueltos" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTVuelto" msprop:Generator_UserTableName="DTVuelto" msprop:Generator_RowDeletedName="DTVueltoRowDeleted" msprop:Generator_RowChangedName="DTVueltoRowChanged" msprop:Generator_RowClassName="DTVueltoRow" msprop:Generator_RowChangingName="DTVueltoRowChanging" msprop:Generator_RowEvArgName="DTVueltoRowChangeEvent" msprop:Generator_RowEvHandlerName="DTVueltoRowChangeEventHandler" msprop:Generator_TableClassName="DTVueltoDataTable" msprop:Generator_TableVarName="tableDTVuelto" msprop:Generator_RowDeletingName="DTVueltoRowDeleting" msprop:Generator_TablePropName="DTVuelto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Venta" msprop:Generator_UserColumnName="Id_Venta" msprop:Generator_ColumnPropNameInRow="Id_Venta" msprop:Generator_ColumnVarNameInTable="columnId_Venta" msprop:Generator_ColumnPropNameInTable="Id_VentaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_Saldo" msprop:Generator_UserColumnName="Total_Saldo" msprop:Generator_ColumnPropNameInRow="Total_Saldo" msprop:Generator_ColumnVarNameInTable="columnTotal_Saldo" msprop:Generator_ColumnPropNameInTable="Total_SaldoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Precio" msprop:Generator_UserColumnName="Precio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Peso_Neto" msprop:Generator_UserColumnName="Total_Peso_Neto" msprop:Generator_ColumnPropNameInRow="Total_Peso_Neto" msprop:Generator_ColumnVarNameInTable="columnTotal_Peso_Neto" msprop:Generator_ColumnPropNameInTable="Total_Peso_NetoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IsSelected" msprop:Generator_UserColumnName="IsSelected" msprop:Generator_ColumnPropNameInRow="IsSelected" msprop:Generator_ColumnVarNameInTable="columnIsSelected" msprop:Generator_ColumnPropNameInTable="IsSelectedColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DTSaldos" msprop:Generator_UserTableName="DTSaldos" msprop:Generator_RowDeletedName="DTSaldosRowDeleted" msprop:Generator_RowChangedName="DTSaldosRowChanged" msprop:Generator_RowClassName="DTSaldosRow" msprop:Generator_RowChangingName="DTSaldosRowChanging" msprop:Generator_RowEvArgName="DTSaldosRowChangeEvent" msprop:Generator_RowEvHandlerName="DTSaldosRowChangeEventHandler" msprop:Generator_TableClassName="DTSaldosDataTable" msprop:Generator_TableVarName="tableDTSaldos" msprop:Generator_RowDeletingName="DTSaldosRowDeleting" msprop:Generator_TablePropName="DTSaldos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Venta" msprop:Generator_UserColumnName="Id_Venta" msprop:Generator_ColumnVarNameInTable="columnId_Venta" msprop:Generator_ColumnPropNameInRow="Id_Venta" msprop:Generator_ColumnPropNameInTable="Id_VentaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_Saldo" msprop:Generator_UserColumnName="Total_Saldo" msprop:Generator_ColumnVarNameInTable="columnTotal_Saldo" msprop:Generator_ColumnPropNameInRow="Total_Saldo" msprop:Generator_ColumnPropNameInTable="Total_SaldoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Precio" msprop:Generator_UserColumnName="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Peso_Neto" msprop:Generator_UserColumnName="Total_Peso_Neto" msprop:Generator_ColumnVarNameInTable="columnTotal_Peso_Neto" msprop:Generator_ColumnPropNameInRow="Total_Peso_Neto" msprop:Generator_ColumnPropNameInTable="Total_Peso_NetoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IsSelected" msprop:Generator_UserColumnName="IsSelected" msprop:Generator_ColumnVarNameInTable="columnIsSelected" msprop:Generator_ColumnPropNameInRow="IsSelected" msprop:Generator_ColumnPropNameInTable="IsSelectedColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

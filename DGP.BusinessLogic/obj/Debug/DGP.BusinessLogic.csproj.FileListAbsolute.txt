@@ -1,0 +1,9 @@
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\bin\Debug\DGP.BusinessLogic.dll
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\bin\Debug\DGP.BusinessLogic.pdb
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\bin\Debug\DGP.DataAccess.dll
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\bin\Debug\DGP.Entities.dll
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\bin\Debug\DGP.DataAccess.pdb
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\bin\Debug\DGP.Entities.pdb
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\obj\Debug\DGP.BusinessLogic.dll
+E:\GitHub\Projecto\DGP\DGP.BusinessLogic\obj\Debug\DGP.BusinessLogic.pdb
